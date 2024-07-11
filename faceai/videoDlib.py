@@ -17,8 +17,8 @@ def discern(img):
         cv2.rectangle(img, (left, top), (right, bottom), (0, 255, 0), 2)
         cv2.imshow("image", img)
 
-
 cap = cv2.VideoCapture(0)
+
 while (1):
     ret, img = cap.read()
     discern(img)
